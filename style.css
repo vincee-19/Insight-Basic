@@ -360,7 +360,6 @@ padding:2rem;
   color:var(--light);
   text-align:justify;
   margin:3rem 0;
-
 }
 .projects .projects__card:hover::before{
   content:"";
@@ -372,6 +371,60 @@ padding:2rem;
 .projects .projects__card:hover .projects__text{
   display:block;
 }
+@media screen and (max-width:500px){
+  .projects .projects__wrapper{
+    display:grid;
+    grid-template-columns:100%;
+    grid-gap:5rem;
+  }
+  .projects .projects__card::before{
+    content:"";
+    width:100%;
+    height:0%;
+  }
+  .projects .projects__text{
+    display:block;
+  }
+}
+
+/* FOOTER */
+.footer{
+  background-color:var(--dark);
+}
+  .footer .footer__wrapper{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+}
+.footer .footer__social{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  gap:5rem;
+}
+.footer .footer__social i{
+  color:var(--light);
+}
+.footer .footer__wrapper p{
+  color:var(--light);
+}
+@media screen and (max-width:500px){
+  .footer .footer__wrapper{
+    display:flex;
+    flex-direction:column;
+    gap:3rem;
+    padding-top:3rem;
+  }
+  .footer .footer__wrapper img{
+    display:flex;
+    order:-1;
+  }
+  .footer .footer__social{
+    gap:4rem;
+  }
+}
+
 
 /* REPEATABLE PATTERNS */
 :root {
